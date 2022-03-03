@@ -3,7 +3,7 @@
 /* The isBadVersion API is defined in the parent class VersionControl.
       bool IsBadVersion(int version); */
 
-public class Solution : VersionControl {
+public class Solution278 : VersionControl {
     public int FirstBadVersion(int n) {
         
         int badVersion = 0; // default value, no bad version

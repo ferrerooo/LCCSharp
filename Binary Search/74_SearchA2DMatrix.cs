@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/search-a-2d-matrix/submissions/
 
-public class Solution {
+public class Solution74 {
     public bool SearchMatrix(int[][] matrix, int target) {
         
         if (matrix == null || matrix.Length == 0 || matrix[0].Length == 0)
