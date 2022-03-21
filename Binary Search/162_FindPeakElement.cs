@@ -1,25 +1,32 @@
 // https://leetcode.com/problems/find-peak-element/
 
-public class Solution {
-    public int FindPeakElement(int[] nums) {
-        
+public class Solution
+{
+    public int FindPeakElement(int[] nums)
+    {
+
         int start = 0;
         int end = nums.Length - 1;
-        
-        while (start <= end) {
-            
+
+        while (start <= end)
+        {
+
             int mid = start + (end - start) / 2;
-            
-            if (mid == start || nums[mid] > nums[mid - 1]) {
+
+            if (mid == start || nums[mid] > nums[mid - 1])
+            {
                 if ((mid == end) || nums[mid] > nums[mid + 1])
                     return mid;
-                else {
+                else
+                {
                     start = mid + 1;
                 }
-            } else {
+            }
+            else
+            {
                 end = mid - 1;
             }
-            
+
             /*
             
             if (mid > start && mid < end) {
@@ -60,7 +67,7 @@ public class Solution {
             }
             */
         }
-        
+
         return -1;
     }
 }

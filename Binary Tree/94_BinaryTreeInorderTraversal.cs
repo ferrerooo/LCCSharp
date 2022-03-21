@@ -3,19 +3,6 @@
 using System;
 using System.Collections.Generic;
 
- public class TreeNode {
-     public int val;
-     public TreeNode left;
-     public TreeNode right;
-     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-         this.val = val;
-         this.left = left;
-         this.right = right;
-     }
- }
-
- /*
- 
  public class Solution94 {
     public IList<int> InorderTraversal(TreeNode root) {
         
@@ -33,12 +20,8 @@ using System.Collections.Generic;
         results.Add(node.val);
         InorderRecursion(node.right, results);        
     }
-}
 
- */
-
- public class Solution94 {
-    public IList<int> InorderTraversal(TreeNode root) {
+    public IList<int> InorderTraversal_NonRecur(TreeNode root) {
         
         IList<int> results = new List<int>();
         
@@ -61,4 +44,15 @@ using System.Collections.Generic;
         return results;
         
     }
+
+    public class TreeNode {
+     public int val;
+     public TreeNode left;
+     public TreeNode right;
+     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+         this.val = val;
+         this.left = left;
+         this.right = right;
+     }
+ }
 }
