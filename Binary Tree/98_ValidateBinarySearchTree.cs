@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-public class Solution {
+public class Solution98 {
     public bool IsValidBST(TreeNode root) {
         
         if (root == null)
