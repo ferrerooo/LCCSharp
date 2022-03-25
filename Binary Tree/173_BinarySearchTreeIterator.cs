@@ -6,7 +6,7 @@ public class BSTIterator173 {
     
     private Stack<TreeNode> stack = new Stack<TreeNode>();
 
-    public BSTIterator(TreeNode root) {
+    public BSTIterator173(TreeNode root) {
         
         while (root != null) {
             stack.Push(root);
