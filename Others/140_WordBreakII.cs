@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/word-break-ii/submissions/
 
+using System.Collections.Generic;
+
 public class Solution140 {
     public IList<string> WordBreak(string s, IList<string> wordDict) {
         
