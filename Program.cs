@@ -6,8 +6,9 @@ namespace LC
     {
         static void Main(string[] args)
         {
-            Solution131 sol = new Solution131();
-            sol.Partition("aab");
+            Solution82 sol = new Solution82();
+            ListNode head = new ListNode(1);
+            sol.DeleteDuplicates(head);
             Console.WriteLine("aab");
         }
     }
