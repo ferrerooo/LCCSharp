@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
 
 using System.Collections.Generic;
+using System.Linq;
 
 public class Solution23 {
     public ListNode MergeKLists(ListNode[] lists) {
