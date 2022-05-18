@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/search-a-2d-matrix/
 
-public class Solution74 {
+public class Solution74_dup {
     public bool SearchMatrix(int[][] matrix, int target) {
         
         int row = matrix.Length;
