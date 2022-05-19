@@ -1,31 +1,35 @@
 ﻿using System;
 
-namespace LC
+public struct MutablePoint
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Solution148 sol = new Solution148();
-            ListNode n1 = new ListNode(4);
-            ListNode n2 = new ListNode(1);
-            //ListNode n3 = new ListNode(2);
-            //ListNode n4 = new ListNode(3);
+    public int X;
+    public int Y;
 
-            n1.next = n2;
-            //n2.next = n3;
-            //n3.next = n4;
+    public MutablePoint(int x, int y) => (X, Y) = (x, y);
 
-            var result = sol.SortList(n1);
-
-            while (result != null) {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
-        }
-    }
+    public override string ToString() => $"({X}, {Y})";
 }
 
+public class Program
+{
+    public static void Main()
+    {
+        var p1 = new MutablePoint(1, 2);
+        var p2 = p1;
+        p2.Y = 200;
+        Console.WriteLine($"{nameof(p1)} after {nameof(p2)} is modified: {p1}, {p1.X}---{p1.Y}");
+        Console.WriteLine($"{nameof(p2)}: {p2}");
+
+        MutateAndDisplay(p2);
+        Console.WriteLine($"{nameof(p2)} after passing to a method: {p2}");
+    }
+
+    private static void MutateAndDisplay(MutablePoint p)
+    {
+        p.X = 100;
+        Console.WriteLine($"Point mutated in a method: {p}");
+    }
+}
 
 /*
 Unfinished:
