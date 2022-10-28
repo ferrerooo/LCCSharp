@@ -22,5 +22,6 @@
             "type": "coreclr",
             "request": "attach"
         }
+        
     ]
 }
